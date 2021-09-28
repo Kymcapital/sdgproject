@@ -1,0 +1,48 @@
+version: '3.8'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: .docker/Dockerfile
+    image: 'sdgtrackerapp'
+    container_name: app
+    restart: unless-stopped
+    ports:
+      - 8080:80
+    volumes:
+      - ./:/var/www/html
+    networks:
+    - sdg-network
+
+  #Mysql database service
+  db:
+    image: mysql:5.7
+    container_name: database
+    restart: unless-stopped
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_DATABASE: 'sdgtrackerdb'
+      MYSQL_ROOT_PASSWORD: "Sdgusegtra@6883"
+    volumes:
+      - ./db:/var/lib/mysql
+    networks:
+    - sdg-network
+
+  #phpMyadmin
+  phpmyadmin:
+    image: phpmyadmin
+    container_name: sdg-phpMyadmin
+    restart: always
+    ports:
+      - 8083:80
+    environment:
+      - PMA_ARBITRARY=1
+    networks:
+    - sdg-network
+
+#Docker Networks
+networks:
+  sdg-network:
+    driver: bridge

@@ -1,0 +1,127 @@
+/*-------------------------------*/
+/*  AUTHOR: Jackson Chegenye              
+/*-------------------------------*/
+
+@media (max-width: 320px) {
+}
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query since this is the default in Bootstrap */
+/* From 767px and Below <-- */
+@media (max-width: 767px) {
+    footer {
+        text-align: center;
+    }
+    footer .btn-primary {
+        margin: 20px 0;
+        width: 100%;
+    }
+    /* .gray-background.p-5.align-items-center.remove-mmargin-x-axis {
+        margin-top: 45px;
+    } */
+    .wrapper {
+        padding: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .wrapper .navbar-collapse.collapse.show{
+        border-top: 1px solid #093e702e;
+        margin-top: 10px;
+        padding-top: 5px;
+    }
+    nav.navbar ul.navbar-nav li a {
+        padding: 5px 0;
+    }
+    .wrapper figure figcaption  h1{
+        font-size: 1.2rem;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    .figure-caption {
+        text-align: left;
+    }
+    .wrapper .row ul.list-unstyled{
+        display: flex;
+    }
+    .wrapper .row ul.list-unstyled li:first-child:nth-last-child(2) ~ li {
+        margin-left: 10px;
+    }
+    .logo {
+        width: 50px;
+    }
+    .navbar-toggler {
+        padding: 0.2rem 0.5rem; 
+    }
+    .wrapper .figure-caption.text-xs-right{
+        margin-top: 15px;
+        text-align: center;
+    }
+    footer h1 {
+        text-align: center;
+        font-size: 1rem;
+        line-height: 1rem;
+        margin-bottom: 0;
+    }
+    footer .right-grid{
+        text-align: center;
+    }
+    nav ul li a{
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .wrapper {
+        padding: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
+    }
+    .wrapper .navbar-collapse.collapse.show{
+        border-top: 1px solid #093e702e;
+        margin-top: 10px;
+        padding-top: 5px;
+    }
+    nav.navbar ul.navbar-nav li a {
+        padding: 5px 0;
+    }
+    .wrapper figure figcaption  h1{
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+        text-align: left;
+    }
+    .figure-caption {
+        text-align: left;
+    }
+    .wrapper .row ul.list-unstyled{
+        display: flex;
+    }
+    .wrapper .row ul.list-unstyled li:first-child:nth-last-child(2) ~ li {
+        margin-left: 15px;
+    }
+    .logo {
+        width: 50px;
+    }
+    .navbar-toggler {
+        padding: 0.2rem 0.5rem; 
+    }
+    .wrapper .figure-caption.text-xs-right{
+        margin-top: 15px;
+        text-align: center;
+    }
+    footer h1 {
+        font-size: 1rem;
+        line-height: 1rem;
+        margin-bottom: 0;
+    }
+    nav ul li a {
+        font-size: 0.6rem;
+    }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
